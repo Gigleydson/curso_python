@@ -47,6 +47,14 @@ def teste2(potencia, num=2):
 print(teste2(2))
 
 
+# Por quê utilizar parâmetros com valor default?
+
+- Nos permite ser mais flexíveis nas funções;
+- Evita erros com parâmetros incorretos;
+- Nos permite trabalhar com exemplos mais legíveis de código
+"""
+
+
 # Exemplo mais complexo
 
 def mostra_informacoes(nome='Geek', instrutor=False):
@@ -61,12 +69,3 @@ print(mostra_informacoes())
 print(mostra_informacoes(instrutor=True))
 print(mostra_informacoes(True))
 print(mostra_informacoes('Gigleydson'))
-
-
-# Por quê utilizar parâmetros com valor default?
-
-- Nos permite ser mais flexíveis nas funções;
-- Evita erros com parâmetros incorretos;
-- Nos permite trabalhar com exemplos mais legíveis de código
-
-"""
