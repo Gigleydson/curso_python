@@ -74,4 +74,4 @@ def minha_funcao(idade, nome, *args, solteiro=False, **kwargs):
 minha_funcao(8, 'Julia')
 minha_funcao(18, 'Felicity', 4, 5, 3, solteiro=True)
 minha_funcao(34, 'Felipe', eu='Não', voce='Vai')
-minha_funcao(19, 'Carla', 9, 4, 3, java=False, python=True)
+minha_funcao(19, 'Carla', 9, 4, 3, 10, java=False, python=True)
