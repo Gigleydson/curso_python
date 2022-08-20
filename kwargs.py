@@ -58,8 +58,6 @@ print(cumprimento_especial(geek='especial'))
 - Parâmetro default (não orbigatórios);
 - **kwargs
 
-"""
-
 
 def minha_funcao(idade, nome, *args, solteiro=False, **kwargs):
     print(f'{nome} tem {idade} anos')
@@ -75,3 +73,16 @@ minha_funcao(8, 'Julia')
 minha_funcao(18, 'Felicity', 4, 5, 3, solteiro=True)
 minha_funcao(34, 'Felipe', eu='Não', voce='Vai')
 minha_funcao(19, 'Carla', 9, 4, 3, 10, java=False, python=True)
+"""
+
+# Desempacotar com **kwargs
+
+
+def mostra_nomes(**kwargs):
+    return f"{kwargs['nome']} {kwargs['sobrenome']}"
+
+
+# print(mostra_nomes(nome='Gigleydson', sobrenome='Dias'))
+
+nomes = {'nome': 'Gigleydson', 'sobrenome': 'Dias'}
+print(mostra_nomes(**nomes))
