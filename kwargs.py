@@ -73,7 +73,7 @@ minha_funcao(8, 'Julia')
 minha_funcao(18, 'Felicity', 4, 5, 3, solteiro=True)
 minha_funcao(34, 'Felipe', eu='Não', voce='Vai')
 minha_funcao(19, 'Carla', 9, 4, 3, 10, java=False, python=True)
-"""
+
 
 # Desempacotar com **kwargs
 
@@ -86,3 +86,25 @@ def mostra_nomes(**kwargs):
 
 nomes = {'nome': 'Gigleydson', 'sobrenome': 'Dias'}
 print(mostra_nomes(**nomes))
+
+"""
+
+
+def soma_multiplos_numeros(a, b, c):
+    print(a + b + c)
+
+
+lista = [1, 2, 3]
+tupla = (1, 2, 3)
+conjunto = {1, 2, 3}
+dicionario = {'a': 1, 'b': 2, 'c': 3}
+
+soma_multiplos_numeros(*lista)
+soma_multiplos_numeros(*tupla)
+soma_multiplos_numeros(*conjunto)
+soma_multiplos_numeros(**dicionario)
+
+# OBS: Os nomes da chave em um dicionário devem ser os mesmos dos parâmetros da função
+
+# dicionario = {'d': 1, 'e': 2, 'f': 3}  # TypeError
+
