@@ -61,3 +61,12 @@ print([letra.upper() for letra in nome])
 # 2
 amigos = ['adail', 'bruno', 'hudson', 'almeida', 'augusto']
 print([amigo.title() for amigo in amigos])
+
+# 3
+print([numero * 3 for numero in range(1, 5)])
+
+# 4
+print([bool(valor) for valor in [0, [], '', True, 1, 3.14]])
+
+# 5
+print([str(numero) for numero in [1, 2, 3, 4, 5]])
