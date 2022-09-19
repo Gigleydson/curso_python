@@ -26,6 +26,7 @@ paises = ['', 'Argentina', '', 'Brasil', 'Chile', '', 'Colombia', '', 'Equador',
 print(paises)
 
 # res = filter(lambda pais: len(pais) > 0, paises)
+# res = filter(lambda pais: pais != '', paises)
 res = filter(None, paises)
 
 print(list(res))
