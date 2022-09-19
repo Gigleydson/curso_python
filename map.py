@@ -2,13 +2,13 @@
 Map
 
 Com map, fazemos mapeamento de valors para função.
-"""
+
 
 import math
 
 
 def area(r):
-    """Calcula a área de um círculo com raia 'r'."""
+    # Calcula a área de um círculo com raia 'r'.
     return math.pi * (r ** 2)
 
 
@@ -33,3 +33,20 @@ areas = map(area, raios)
 print(areas)
 print(type(areas))
 print(list(areas))
+
+# Forma 3 - Map com Lambda
+print(list(map(lambda r: math.pi * (r ** 2), raios)))
+
+#OBS: Após utilizar a função map() depois da primeira utilização do resultado, ele zera.
+"""
+
+# Mais um exemplo
+
+# f = 9/5 * c + 32  formula para passar graus celsius para fahrenheit
+
+cidades = [('Natal', 28), ('Toronto', 16), ('Boston', 20), ('Tokio', 25)]
+print(cidades)
+
+conversao = lambda dado: (dado[0], (9/5) * dado[1] + 32)
+
+print(list(map(conversao, cidades)))
