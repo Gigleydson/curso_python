@@ -20,7 +20,6 @@ res = filter(lambda valor: valor > media, dados)
 print(list(res))
 
 # OBS: Assim como a função map(), após serem utilizados os dados de filter() eles são excluídos da memória.
-"""
 
 paises = ['', 'Argentina', '', 'Brasil', 'Chile', '', 'Colombia', '', 'Equador', '', '', 'Venezuela']
 print(paises)
@@ -30,3 +29,27 @@ print(paises)
 res = filter(None, paises)
 
 print(list(res))
+"""
+
+# Exemplo mais complexo
+
+usuarios = [
+    {'username': 'samuel', 'tweets': ['Eu adoro bolo', 'Eu adoro pizza']},
+    {'username': 'andre', 'tweets': ['Hoje é meu aniversário']},
+    {'username': 'jorge', 'tweets': []},
+    {'username': 'samuel', 'tweets': []},
+    {'username': 'felipe', 'tweets': ['Estou de férias!', 'Comprei um tênis novo']},
+    {'username': 'marcos', 'tweets': []}
+]
+
+print(usuarios)
+
+
+# Filtrar os usuários que estão ativos no Twitter
+
+# Forma 1
+# inavitos = list(filter(lambda usuario: len(usuario['tweets']) == 0, usuarios))
+
+# Forma 2
+inavitos = list(filter(lambda usuario: not usuario['tweets'], usuarios))
+print(inavitos)
