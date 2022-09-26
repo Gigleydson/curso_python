@@ -29,7 +29,7 @@ print(paises)
 res = filter(None, paises)
 
 print(list(res))
-"""
+
 
 # Exemplo mais complexo
 
@@ -51,5 +51,15 @@ print(usuarios)
 # inavitos = list(filter(lambda usuario: len(usuario['tweets']) == 0, usuarios))
 
 # Forma 2
-inavitos = list(filter(lambda usuario: not usuario['tweets'], usuarios))
-print(inavitos)
+inativos = list(filter(lambda usuario: not usuario['tweets'], usuarios))
+print(inativos)
+"""
+
+# Combinar filter() e map()
+
+nomes = ['Vanessa', 'Ana', 'Maria']
+
+# Devemos criar uma lista contendo 'Sua instrutora é' + nome, desde que cada nome tenha menos de 5 caracteres
+
+lista = list(map(lambda nome: f'Sua instrutora é {nome}', filter(lambda nome: len(nome) < 5, nomes)))
+print(lista)
