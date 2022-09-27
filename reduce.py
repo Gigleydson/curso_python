@@ -54,5 +54,12 @@ dados = [2, 4, 5, 10]
 multi = lambda x, y: x * y
 
 res = reduce(multi, dados)
+print(res)
+
+
+# Utilizando um loop normal.
+res = 1
+for n in dados:
+    res = res * n
 
 print(res)
