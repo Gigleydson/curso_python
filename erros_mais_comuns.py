@@ -116,4 +116,8 @@ print('Geek')
 b)
 for i in range(10):
 i + 1
+
+OBS: Exceptions e Erros são sinônimos na programação.
+
+OBS: Importante ler e prestar atenção na saída de erro.
 """
